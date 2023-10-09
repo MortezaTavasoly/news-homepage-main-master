@@ -1,0 +1,131 @@
+.footer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-items {
+  width: 33.33%;
+  cursor: pointer;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.footer-items p {
+  width: 100%;
+}
+.footer-items h2 {
+  font-size: 40px;
+  margin: 0 0 10px;
+  color: hsl(233, 8%, 79%);
+}
+.footer-items h3 {
+  font-weight: 20px;
+  font-weight: bolder;
+  margin: 10px 0;
+  transition: 0.2s ease;
+}
+.footer-items:hover h3 {
+  color: hsl(5, 85%, 63%);
+}
+
+.footer-items img {
+  width: 120px;
+  margin-right: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .App {
+    padding: 40px 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .news-content .text {
+    flex-direction: column;
+    align-items: start;
+  }
+  .news-content .text .information {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .App {
+    padding: 40px 10px;
+  }
+  .news-content {
+    width: 65%;
+  }
+  .new {
+    width: 35%;
+  }
+  .news-content .text .title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 850px) {
+  .new .title {
+    font-size: 30px;
+  }
+  .new .news .news-title {
+    font-size: 20px;
+  }
+  .footer .footer-items {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .App {
+    padding: 40px 100px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .news-content {
+    width: 100%;
+  }
+  .new {
+    width: 90%;
+    margin: 0 auto 100px;
+  }
+  .navbar .links {
+    display: none;
+  }
+  .navbar .menu img {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 40px 20px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer .footer-items {
+    width: 60%;
+    margin: 0 auto 30px;
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  .footer .footer-items {
+    width: 100%;
+  }
+  .news-content .text {
+    flex-direction: column;
+    align-items: start;
+  }
+  .news-content .text .information {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 300px) {
+  .App {
+    padding: 40px 5px;
+  }
+}

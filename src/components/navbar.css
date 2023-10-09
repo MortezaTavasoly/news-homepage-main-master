@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo {
+  cursor: pointer;
+}
+
+.navbar .links a {
+  margin: 10px 0 10px 30px;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  transition: 0.2s ease;
+}
+
+.navbar .links a:hover {
+  color: hsl(35, 77%, 62%);
+}
+.navbar .links-mobile a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.navbar .menu img {
+  cursor: pointer;
+  display: none;
+  width: 20px;
+  height: 15px;
+}
+
+.navbar .links-mobile {
+  box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+  display: none;
+  width: 50%;
+  padding-top: 100px;
+  text-align: left;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  position: fixed;
+  flex-direction: column;
+  background-color: white;
+}
+.navbar .links-mobile a {
+  margin: 10px 0 10px 30px;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  transition: 0.2s ease;
+}
+.navbar .links-mobile img {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+}
